@@ -1,0 +1,15 @@
+<launch>
+  <!-- Load robot description (URDF) -->
+  <param name="robot_description" command="cat $(find my_robot_description)/urdf/my_robot.urdf"/>
+
+  <!-- Start Gazebo with the robot model -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find gazebo_ros)/worlds/empty.world"/>
+  </include>
+
+  <!-- Start robot state publisher to publish robot transforms -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen"/>
+
+  <!-- Load the custom plugin (if any) -->
+  <node name="pose_publisher_plugin" pkg="my_robot_description" type="pose_publisher_plugin" output="screen"/>
+</launch>

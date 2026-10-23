@@ -1,0 +1,3 @@
+[submodule "nexus_4wd_mecanum_simulation"]
+	path = nexus_4wd_mecanum_simulation
+	url = https://github.com/Tarekshohdy688/nexus_4wd_mecanum_simulator.git

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot name="simple_robot">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.2" length="0.5"/>
+      </geometry>
+      <material name="blue"/>
+        <ambient>0.0 0.0 1.0 1.0</ambient>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+      </material>
+    </visual>
+  </link>
+
+  <gazebo>
+    <plugin name="pose_publisher_plugin" filename="libpose_publisher_plugin.so"/>
+  </gazebo>
+</robot>
