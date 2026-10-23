@@ -1,5 +1,9 @@
 # ArtPark Intern Project ROS1 Noetic
 
+## The Challenge
+
+The task itself you can find it in: [Task Link](https://kfupmedusa-my.sharepoint.com/:f:/g/personal/g202522470_kfupm_edu_sa/IgAyuMLLHwo7R4tLKK8swNswAbQBppft3uf96RDZuI9MVOU?e=NbhdfD)
+
 ## Clone the project
 
 Clone into the `src` directory of a catkin workspace, including the simulator submodule:
